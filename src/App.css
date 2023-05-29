@@ -168,7 +168,7 @@ select{
 }
 .logos{
   width: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
 }
 .data{
   margin-left: 10px;
@@ -213,8 +213,6 @@ select{
 }
 .table-info{
   width: 300px;
-  display: flex;
-  justify-content: space-between;
   font-size: small;
   margin-left: auto;
   margin-right: auto;
@@ -238,15 +236,16 @@ select{
 }
 .logos{
   width: 30px;
+  margin-top:auto;
+  margin-bottom:auto;
 }
 .data{
   margin-left: 5px;
   margin-right: 5px;
 }
 .stats{
-  display:flex;
-  justify-content: right;
   width: 100%;
+  justify-content: right;
 }
 .data-info{
   margin-left: 6px;
