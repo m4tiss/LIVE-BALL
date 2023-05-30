@@ -4,6 +4,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import MainSection from './components/MainSection';
 import Footer from './components/Footer';
+import Legend from './components/Legend';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       <NavBar/>
       <MainSection/>
       <Footer/>
+      <Legend/>
 
     </div>
   );

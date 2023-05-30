@@ -191,6 +191,39 @@ select{
 .relegation{
   border: red solid 2px;
 }
+.position-panel{
+  
+  display: flex;
+  flex-direction: column;
+  top:35%;
+  left:0;
+  position: fixed;
+}
+.legend-panel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: blue;
+  width: 200px; 
+  height:50px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-left: -150px;
+  transition-duration: 600ms;
+  font-family: 'Pangolin', cursive;
+}
+.legend-panel:hover{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 0px;
+}
+/* .logo-legend:hover{
+  scale: 150%;
+} */
+.logo-legend{
+  width:50px;
+}
 .logos{
   width: 50px;
   margin-bottom: 10px; 
@@ -218,6 +251,9 @@ select{
 @media (max-width: 1200px){
   .leagues-container{
     grid-template-columns: repeat(2,1fr);
+  }
+  .position-panel{
+    display: none;
   }
 }
 @media (max-width:950px){
