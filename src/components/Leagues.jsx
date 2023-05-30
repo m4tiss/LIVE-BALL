@@ -17,7 +17,7 @@ useEffect(()=>{
   return (
     <div className="leagues-container">
         {
-            data.map((data)=>(
+            data.filter((league) => (league.id !== 'idn.1' && league.id !== 'uga.1' && league.id !== 'mys.1' && league.id !== 'sgp.1' && league.id !== 'tha.1')).map((data)=>(
                <div key={data.id} className="league-div">
                 <img className="league-photo" src={data.logos.light} alt="#" size={5} />
                 <div className="text-div">

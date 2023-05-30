@@ -36,18 +36,13 @@ const Tables = () => {
           <option value="eng.1">English Premier League</option>
           <option value="fra.1">French Ligue 1</option>
           <option value="ger.1">German Bundesliga</option>
-          <option value="idn.1">Indonesian Liga 1</option>
           <option value="ita.1">Italian Serie A</option>
           <option value="jpn.1">Japanese J League</option>
-          <option value="mys.1">Malaysian Super League</option>
           <option value="mex.1">Mexican Liga BBVA MX</option>
           <option value="por.1">Portuguese Liga</option>
           <option value="rus.1">Russian Premier League</option>
-          <option value="sgp.1">Singaporean Premier League</option>
           <option value="esp.1">Spanish Primera División</option>
-          <option value="tha.1">Thai Premier League</option>
           <option value="tur.1">Turkish Super Lig</option>
-          <option value="uga.1">Ugandan Super League</option>
         </select>
         <select
           name="selected-year"
@@ -88,7 +83,16 @@ const Tables = () => {
               </div>
             </div>
             {data.map((data, index) => (
-              <div key={data.team.id} className="table-pos">
+              <div key={data.team.id} 
+              className={`table-pos 
+              ${data.note && (data.note.description === "Champions League" || data.note.description === "Champions League ")? "champions-league" : ""}
+              ${data.note && (data.note.description === "Champions League qualifying" ? "champions-league-qualifying" : "")}
+              ${data.note && (data.note.description === "Europa League" || data.note.description === "Europa League ")? "europa-league" : ""}
+              ${data.note && data.note.description === "Europa League qualifying" ? "europa-league-qualifying" : ""}  
+              ${data.note && data.note.description === "Europa Conference League" ? "conference-league" : ""} 
+              ${data.note && data.note.description === "Europa Conference League qualifying" ? "conference-league-qualifying" : ""}  
+              ${data.note && (data.note.description === "Relegation playoff" || data.note.description === "Relegation playoffs") ? "relegation-playoff" : ""}
+              ${data.note && (data.note.description === "Relegation" || data.note.description === "Relegated") ? "relegation" : "" } `}>
                 <div className="index-name">
                   <span className="data">
                     {`${index + 1}.`}

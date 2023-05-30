@@ -166,6 +166,31 @@ select{
   font-size: xx-large;
   font-family: 'Pangolin', cursive;
 }
+.champions-league{
+  border: blue solid 2px;
+}
+.champions-league-qualifying{
+  border: lightskyblue solid 2px;
+}
+
+.europa-league{
+  border: orangered solid 2px;
+}
+.europa-league-qualifying{
+  border: orange solid 2px;
+}
+.conference-league{
+  border: green solid 2px;
+}
+.conference-league-qualifying{
+  border: lightgreen solid 2px;
+}
+.relegation-playoff{
+  border: rgb(211, 28, 135) solid 2px;
+}
+.relegation{
+  border: red solid 2px;
+}
 .logos{
   width: 50px;
   margin-bottom: 10px; 
@@ -219,9 +244,6 @@ select{
 }
 .table-pos{
   width: 300px;
-  justify-content: space-between;
-  border: gray solid 2px;
-  border-radius: 80px;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
