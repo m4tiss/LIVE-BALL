@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { LineWave } from 'react-loader-spinner'
 import axios from 'axios'
-
+import Legend from './Legend';
 
 const Tables = () => {
 
@@ -113,6 +113,7 @@ const Tables = () => {
           </div>
         )}
       </div>
+      <Legend/>
     </div>
   )
 }

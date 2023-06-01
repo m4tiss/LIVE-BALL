@@ -3,6 +3,8 @@ import CL_LOGO from '../assets/cl.png'
 import CL_LOGOB from '../assets/clBlack.png'
 import EL_LOGO from '../assets/l3.png'
 import CONF_LOGO from '../assets/conf2.png'
+import ARROW from '../assets/arrow2.png'
+import DOUBLEARROW from '../assets/arrow3.png'
 
 
 const Legend = () => {
@@ -66,6 +68,26 @@ const Legend = () => {
                 <>
                 Europa Conference League Qualifcation
                 <img src={CONF_LOGO} alt='#' className='logo-legend' style={{ width: '28px', paddingRight: '10px' }}/>
+                </>
+            ),
+        },
+        {
+            id:7,
+            style:{background:'rgb(211, 28, 135)'},
+            child:(
+                <>
+                Relegation playoff
+                <img src={ARROW} alt='#' className='logo-legend' style={{ width: '20px', paddingRight: '13px' }}/>
+                </>
+            ),
+        },
+        {
+            id:8,
+            style:{background:'red'},
+            child:(
+                <>
+                Relegation
+                <img src={DOUBLEARROW} alt='#' className='logo-legend' style={{ width: '28px', paddingRight: '10px' }}/>
                 </>
             ),
         },
