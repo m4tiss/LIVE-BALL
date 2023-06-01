@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { LineWave } from 'react-loader-spinner'
 import axios from 'axios'
 import Legend from './Legend';
+import MobileLegend from './MobileLegend';
 
 const Tables = () => {
 
@@ -22,6 +23,7 @@ const Tables = () => {
 
   return (
     <div className='main-div'>
+      <MobileLegend/>
       <div className="select-container">
         <select
           name="select-league"
