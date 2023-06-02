@@ -17,7 +17,7 @@ const MobileLegend = () => {
             child: (
                 <>
                 CL
-                <img src={CL_LOGO} alt="#"style={{ width: '30px', paddingRight: '10px',}} />
+                <img src={CL_LOGO} alt="#"style={{ width: '30px'}} />
                 </>
             )
         },
@@ -27,7 +27,7 @@ const MobileLegend = () => {
             child: (
                 <>
                 CL Q
-                <img src={CL_LOGOB} alt="#" style={{ width: '30px', paddingRight: '10px',}}/>
+                <img src={CL_LOGOB} alt="#" style={{ width: '30px'}}/>
                 </>
             ),
         },
@@ -37,7 +37,7 @@ const MobileLegend = () => {
             child:(
                 <>
                 EL
-                <img src={EL_LOGO} alt='#'style={{ width: '20px', paddingRight: '10px',}}/>
+                <img src={EL_LOGO} alt='#'style={{ width: '20px', paddingRight: '3px',}}/>
                 </>
             ),
         },
@@ -47,7 +47,7 @@ const MobileLegend = () => {
             child:(
                 <>
                 EL Q
-                <img src={EL_LOGO} alt='#'style={{ width: '20px', paddingRight: '10px' }}/>
+                <img src={EL_LOGO} alt='#'style={{ width: '20px', paddingRight: '3px' }}/>
                 </>
             ),
         },
@@ -57,7 +57,7 @@ const MobileLegend = () => {
             child:(
                 <>
                 ECL
-                <img src={CONF_LOGO} alt='#' style={{ width: '20px', paddingRight: '10px' }}/>
+                <img src={CONF_LOGO} alt='#' style={{ width: '20px', paddingRight: '3px' }}/>
                 </>
             ),
         },
@@ -67,7 +67,7 @@ const MobileLegend = () => {
             child:(
                 <>
                 ECL Q
-                <img src={CONF_LOGO} alt='#' style={{ width: '20px', paddingRight: '10px' }}/>
+                <img src={CONF_LOGO} alt='#' style={{ width: '20px', paddingRight: '3px' }}/>
                 </>
             ),
         },
