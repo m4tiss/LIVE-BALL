@@ -9,7 +9,7 @@ const Tables = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false);
   const [selectedLeague, setSelectedLeague] = useState("eng.1")
-  const [selectedYear, setSelectedYear] = useState("2022")
+  const [selectedYear, setSelectedYear] = useState("2023")
 
   useEffect(() => {
     setLoading(true);
@@ -63,7 +63,7 @@ const Tables = () => {
           <option value="2020">2020</option>
           <option value="2021">2021</option>
           <option value="2022">2022</option>
-          <option value="2022">2023</option>
+          <option value="2023">2023</option>
         </select>
       </div>
       <div className="tables-container">
